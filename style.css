@@ -1,0 +1,85 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+main { flex: 1; }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.7);
+    transition: color 0.2s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover { color: #fff; }
+.navbar-dark .navbar-nav .nav-link.active { color: #fff; font-weight: 600; border-bottom: 2px solid #fff; }
+
+.calc-card {
+    background: #202020;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid #333;
+}
+
+.nav-calc-mode {
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+.nav-calc-mode .nav-link {
+    color: #aaa;
+    font-size: 1.1rem;
+    padding: 5px 15px 5px 0;
+    cursor: pointer;
+}
+
+.nav-calc-mode .nav-link.active {
+    color: #fff;
+    font-weight: 600;
+    background: none;
+}
+
+.display {
+    background: transparent;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 5px;
+    min-height: 80px;
+}
+
+.calc-btn {
+    width: 100%;
+    height: 54px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: none;
+    transition: background 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc-btn:hover { filter: brightness(1.2); }
+.calc-btn:active { filter: brightness(0.8); transform: scale(0.95); }
+
+.btn-num { background: #3b3b3b; color: #fff; }
+.btn-op { background: #323232; color: #fff; }
+.btn-eq { background: #dfbb8c; color: #000; font-weight: 500; }
+
+.table { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.card-custom { border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: none; }
+
+@media (max-width: 576px) {
+    .calc-btn { height: 48px; font-size: 1rem; }
+    .display { font-size: 2.8rem; }
+}
+
+footer { background: #212529; color: #adb5bd; padding: 2rem 0; margin-top: auto; }
